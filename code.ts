@@ -14,8 +14,8 @@
     return new Blob( [ arr ], { type: type } );
   }
 
-  viewDocument (data, index?) {
-    const fileData = this.uploadDataSource[index].fileData;
+  viewDocument () {
+    const fileData = this.uploadDataSource[0].fileData;
       const reader = new FileReader();
       let baseData;
       reader.onload = (e) => {
